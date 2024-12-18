@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JKAT COMERCIAL</title>
+  <style>
+    /* Estilo general */
+    body {
+      background-color: #f0f0f0; /* Color de fondo */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Encabezado */
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header h1 {
+      font-size: 4em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    header h3, h4 {
+      font-size: 1.2em;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    header img {
+      max-width: 3000px; /* Tamaño controlado */
+      height: auto;
+    }
+
+    /* Redes sociales */
+    header .redes-sociales img {
+      width: 40px;
+      margin: 0 10px;
+    }
+
+    /* Sección de productos */
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    .producto {
+      text-align: center;
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .producto img {
+      max-width: 50%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .producto h3 {
+      font-size: 1.2em;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .producto .precio {
+      font-size: 1.3em;
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="imagen30.jpeg" alt="Logo JKAT Comercial">
+    <h3>Estamos ubicados en Barrio El Centro, calle Vicente Williams, frente al Gallo más Gallo, Choluteca.</h3>
+    <h4>Contacto para pedidos: 
+      <a href="https://wa.me/50498263724" target="_blank" style="color: green; font-weight: bold;">WhatsApp 98263724</a>
+    </h4>
+    <h4>Síguenos en redes sociales:</h4>
+    <div class="redes-sociales">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@jkath.hn" target="_blank">
+        <img src="data:image/png;base64,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" alt="TikTok">
+      </a>
+    </div>
+    <h4>Encuéntranos aquí:</h4>
+    <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15293.232059410839!2d-87.19364166259766!3d13.304019927978516!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDE4JzE0LjUiTiA4N8KwMTEnMzcuMSJX!5e0!3m2!1ses!2shn!4v1718731200000" 
+  width="25%" height="50px" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
+
+  </header>
+
+  <!-- Productos -->
+  <main>
+    <div class="producto">
+      <img src="imagen1.png" alt="Crema hidratante Cerave">
+      <h3>Cremas hidratantes Cerave (con SPF 30)</h3>
+      <p class="precio">L. 30.00 C/U</p>
+    </div>
+
+    <div class="producto">
+      <img src="imagen2.png" alt="Jabón hidratante Cerave">
+      <h3>Jabón hidratante Cerave (piel seca)</h3>
+      <p class="precio">L. 500.00 (12 oz) | L. 700.00 (16 oz)</p>
+    </div>
+
+    <div class="producto">
+      <img src="imagen3.png" alt="Jabón piel con acné">
+      <h3>Jabón para piel con acné y textura</h3>
+      <p class="precio">L. 700.00</p>
+    </div>
+
+    <div class="producto">
+        <img src="imagen4.png" alt="Jabón piel con acné">
+        <h3>Jabón para piel con acné y textura</h3>
+        <p class="precio">L. 700.00</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen5.png" alt="Jabón piel con acné">
+        <h3>Jabón para piel con acné y textura</h3>
+        <p class="precio">L. 700.00</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen5.png" alt="Jabón piel con acné">
+        <h3>Jabón para piel con acné y textura</h3>
+        <p class="precio">L. 700.00</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen6.png" alt="Jabón piel con acné">
+        <h3>Jabón para piel con acné y textura</h3>
+        <p class="precio">L. 700.00</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen7.png" alt="Jabón piel con acné">
+        <h3>Jabón para piel con acné y textura</h3>
+        <p class="precio">L. 700.00</p>
+      </div>
+      <div class="producto">
+        <img src="imagen8.png" alt="Jabón piel con acné">
+        <h3>Jabón para piel con acné </h3>
+        <p class="precio">L. 700.00</p>
+      </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 JKAT Comercial - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
